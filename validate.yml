@@ -1,0 +1,9 @@
+---
+
+- hosts: all
+  gather_facts: yes
+  tasks:
+  - name: create a file
+    file:
+      path: "/tmp/files13s"
+      state: touch
